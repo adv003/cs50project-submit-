@@ -1,81 +1,83 @@
 :root {
-    --primary-color: #1e212d;
-    --secondary-color: #3f51b5;
+    --primary-color: #17252A;
+    --secondary-color: #E0FBFC;
   }
   
   body {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
     background-color: var(--primary-color);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    color: var(--secondary-color);
   }
   
   header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: var(--secondary-color);
+    justify-content: space-between;
+    padding: 1rem;
   }
   
   .logo {
-    color: white;
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
+    color: var(--secondary-color);
     text-decoration: none;
   }
   
+  .logo:hover {
+    color: #fff;
+  }
+  
   .search {
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
     border: none;
-    border-radius: 20px;
-    background-color: #e4e4e4;
+    border-radius: 0.25rem;
+    background-color: #fff;
     color: var(--primary-color);
-    font-size: 16px;
-    margin-right: 20px;
+    font-size: 1rem;
+    margin-right: 1rem;
   }
   
   .search::placeholder {
     color: var(--primary-color);
+    opacity: 0.5;
   }
   
   .search:focus {
     outline: none;
-    box-shadow: 0 0 5px var(--secondary-color);
   }
   
   #main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    padding: 1rem;
   }
   
   .movie {
-    margin: 20px;
-    width: 300px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    border-radius: 0.25rem;
+    overflow: hidden;
   }
   
   .movie-img {
     width: 100%;
     height: auto;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
   }
   
   .movie-info {
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
   }
   
   .movie-info h3 {
-    font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin: 0;
+    font-size: 1.5rem;
   }
   
   .movie-info span.green {
@@ -91,16 +93,26 @@
   }
   
   .overview {
-    padding: 10px;
-    background-color: #f2f2f2;
-    font-size: 16px;
+    padding: 0.5rem 1rem;
+  }
+  
+  .overview h3 {
+    margin: 0;
+    font-size: 1rem;
     line-height: 1.5;
   }
   
+  .errorHandle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+  }
   
-  .overview h3 {
-    font-size: 16px;
-    line-height: 1.4;
-    margin: 0;
+  .errorHandle h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-color);
   }
   
