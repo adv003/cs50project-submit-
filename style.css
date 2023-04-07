@@ -1,10 +1,10 @@
 /* Style your project here*/
-/* Style your project here*/
+
 @import url('https://fonts.googleapis.com/css2?family=Freehand&family=Kaushan+Script&family=Poppins:ital,wght@1,200&family=Roboto:wght@400;700&family=Smooch&display=swap');
 
 :root {
-    --primary_color: #074094;
-    --secondary_color: #062552;
+    --primary_color: #64748b;
+    --secondary_color: #9ca3af;
 }
 
 * {
@@ -30,7 +30,6 @@ header {
     font-size: 2rem;
     background: -webkit-linear-gradient(#374151, #94b2e0);
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
 }
@@ -41,7 +40,10 @@ header {
     border-radius: 5rem;
     font-family: inherit;
     padding: 0.5rem 1rem;
+}
 
+.search::placeholder {
+    color: #78716c;
 }
 
 .search:focus {
@@ -53,12 +55,11 @@ header {
 #main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 .movie {
-    width: 28rem;
-    margin: 1.9rem;
+    width: 24rem;
+    margin: 1.4rem;
     background-color: var(--secondary_color);
     box-shadow: 0.2rem 0.2rem 3rem 0 rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
@@ -84,7 +85,7 @@ header {
 
 .movie-info span {
     background-color: var(--primary_color);
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem;
     border-radius: 0.5rem;
     font-weight: bold;
 }
@@ -113,15 +114,9 @@ header {
     font-size: 1.8rem;
     color: #a8a29e;
     transition: all 0.2s ease;
-    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2)
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
+    /* transform: translateY(0); */
 }
-
-.overview:hover {
-    transform: translateY(0);
-}
-
-
-/* Responsive */
 @media only screen and (max-width: 700px) {
     header {
         display: flex;
