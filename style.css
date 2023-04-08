@@ -1,19 +1,17 @@
-/* Global variables */
 :root {
-  --primary-color: #17252A; /* Primary color for background */
-  --secondary-color: #E0FBFC; /* Secondary color for text and accents */
+  --primary-color: #17252A;
+  --secondary-color: #E0FBFC;
+  --error-color: #E74C3C;
 }
 
-/* Body styles */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: var(--primary-color); /* Use primary color as the background */
-  color: #306264; /* Set text color */
+  background-color: var(--primary-color);
+  color: #337577;
 }
 
-/* Header styles */
 header {
   display: flex;
   align-items: center;
@@ -21,39 +19,36 @@ header {
   padding: 1rem;
 }
 
-/* Logo styles */
 .logo {
   font-size: 2rem;
   font-weight: bold;
-  color: var(--secondary-color); /* Use secondary color for the logo */
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
 .logo:hover {
-  color: #fff; /* Change logo color on hover */
+  color: #fff;
 }
 
-/* Search bar styles */
 .search {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.25rem;
-  background-color: #fff; /* White background for search bar */
-  color: var(--primary-color); /* Use primary color for text */
+  background-color: #fff;
+  color: var(--primary-color);
   font-size: 1rem;
   margin-right: 1rem;
 }
 
 .search::placeholder {
-  color: var(--primary-color); /* Placeholder text color */
+  color: var(--primary-color);
   opacity: 0.5;
 }
 
 .search:focus {
-  outline: none; /* Remove focus outline */
+  outline: none;
 }
 
-/* Main content styles */
 #main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -61,7 +56,6 @@ header {
   padding: 1rem;
 }
 
-/* Movie card styles */
 .movie {
   background-color: #fff;
   border-radius: 0.25rem;
@@ -78,8 +72,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
-  background-color: var(--primary-color); /* Use primary color for background */
-  color: var(--secondary-color); /* Use secondary color for text */
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .movie-info h3 {
@@ -87,7 +81,6 @@ header {
   font-size: 1.5rem;
 }
 
-/* Movie rating styles */
 .movie-info span.green {
   color: lightgreen;
 }
@@ -100,7 +93,6 @@ header {
   color: orange;
 }
 
-/* Movie overview styles */
 .overview {
   padding: 0.5rem 1rem;
 }
@@ -111,17 +103,17 @@ header {
   line-height: 1.5;
 }
 
-/* Error handling styles */
 .errorHandle {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 80px); /* Center error message vertically */
+  height: calc(100vh - 80px);
+  background-color: var(--error-color);
 }
 
 .errorHandle h1 {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  color: var(--primary-color); /* Use primary color for error message */
+  color: var(--secondary-color);
 }
