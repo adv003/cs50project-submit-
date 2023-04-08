@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
+    <!-- Set the character encoding to UTF-8 -->
     <meta charset="UTF-8" />
+    <!-- Use the latest version of Internet Explorer for rendering -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Make the web page responsive to different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to the CSS stylesheet -->
     <link rel="stylesheet" href="style.css" />
-
-
+    <!-- Set the title of the web page -->
     <title>Movies App</title>
-</head>
-
-<body>
-    <!-- Start writing your code here -->
+  </head>
+  <body>
+    <!-- Start of the header section -->
     <header>
-        <a href="#" class="logo">Watch New Movie</a>
-    <form id="search_form">
+      <!-- Add a logo with a link to the home page -->
+      <a href="#" class="logo">Watch New Movie</a>
+      <!-- Add a search form -->
+      <form id="search_form">
         <input type="text" id="search" class="search" placeholder="Search" />
-    </form>
+      </form>
     </header>
-    
-    <main id="main">
-        <div class="movie">
-        
-        <img src="https://www.themoviedb.org/t/p/original/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg" alt="movie image"
-            class="movie-img" />
-        <div class="movie-info">
-            <h3>John Wick: Chapter 4</h3>
-            <span class=".green">8.2</span>
-        </div>
-        <div class="overview">
-            <h3 class="overview">With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.</h3>
-        </div>
-        </div>
-    </main>
-        <script src="script.js"></script>
-</body>
+    <!-- End of the header section -->
 
+    <!-- Start of the main section -->
+    <main id="main">
+      <!-- Add a movie card -->
+      <div class="movie">
+        <!-- Add the movie image -->
+        <img src="https://www.themoviedb.org/t/p/original/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg" alt="movie image" class="movie-img" />
+        <!-- Add the movie info -->
+        <div class="movie-info">
+          <h3>John Wick: Chapter 4</h3>
+          <span class="green">8.2</span>
+        </div>
+        <!-- Add the movie overview -->
+        <div class="overview">
+          <h3 class="overview">With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.</h3>
+        </div>
+      </div>
+      <!-- End of the movie card -->
+    </main>
+    <!-- End of the main section -->
+
+    <!-- Add a link to the JavaScript file -->
+    <script src="script.js"></script>
+  </body>
 </html>
