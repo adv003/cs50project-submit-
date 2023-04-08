@@ -2,13 +2,13 @@
     --primary-color: #17252A;
     --secondary-color: #E0FBFC;
   }
-  
+
   body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: #337577;
   }
   
   header {
