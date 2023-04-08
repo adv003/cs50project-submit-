@@ -27,7 +27,7 @@ async function getMovies(url) {
 
     // Display movies or error message
     if (data.results.length === 0) {
-      showErrorMessage("Oh no 🙅🏻 ! There is no such movie exists ");
+      showErrorMessage("Oh no 🙅🏻 ! No such movie exists ");
     } else {
       showMovies(data.results);
     }
