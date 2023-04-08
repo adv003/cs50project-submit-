@@ -2,18 +2,16 @@
 # MOVIE CATALOGUE
 #### Video Demo:  <URL HERE>
 #### Description:
-welcome to my Movie Catalogue Static Webpage. My name is Advay Sreejith, and I am excited to share with you this project I have been working on for cs50.
+Welcome to my Movie Catalogue Static Webpage. My name is Advay Sreejith, and I am excited to share with you this project I have been working on for cs50.
 
 The webpage is designed to display popular movie posters, ratings, and descriptions using HTML, CSS, and JavaScript. To accomplish this, I have used the TMDB API, which stands for The Movie Database. This community-driven platform provides access to a vast library of movie information, including posters, trailers, and ratings.
 
-When you first visit the webpage, you will see a list of popular movies. Each movie poster is displayed with its rating and brief description.
+When we first visit the webpage, you will see a list of popular movies. Each movie poster is displayed with its poster, rating and a brief description. The website includes a search function that allows you to quickly search for movies by sending the search string query through the URL to the TMDB library and fetching the required information.
 
-But what if you are looking for a specific movie? No worries! My website includes a search function that allows you to quickly find the movie you're looking for by sending your query through the URL to the TMDB library and fetching the required information.
+Within the HTML code, it's structured with the latest standards and includes a responsive design that adapts to different screen sizes. The header contains the search bar, and clicking on the logo will bring you back to the homepage.The page starts with a header section that contains a logo and a search form. The main section displays a movie card that includes an image, movie info (title and rating), and a brief overview of the movie. The page also includes links to an external CSS stylesheet and a JavaScript file. The code also includes meta tags that set the character encoding, compatibility mode, and viewport for the page. The page title is set to "Movies App."
 
-Let's check out the HTML code. As you can see, it's structured with the latest standards and includes a responsive design that adapts to different screen sizes. The header has a search bar to help you find movies, and the logo will bring you back to the homepage.
+Now, let's take a look at the JavaScript code. I began by defining api API constants following a function to fetch movies from the API. I also made use of a try and catch method to check for potential errors and a function for displaying the error message. After which is a function for displaying movies.This functions adds content by changing the inner HTML with data from the API. The javascript file ends with three functions for changing the colour of the rating based on the highest rating being green and the lowest red, a form submition checking function that makes sure the search query is not null and finally an eventlistener for clicking the logo to go back to homepage.
 
-Now, let's take a look at the JavaScript that powers the website. With this code, you can search for any movie you want and display its details. The website will even display a helpful error message if it can't find what you're looking for.
-
-Each movie card has the movie's poster, rating, and overview. The rating's color indicates its overall rating, with green being the best and red being the worst.
+The root element sets three custom colors: the primary color, secondary color, and error color. The body has a background color of the primary color, and the font family is set to Arial or sans-serif. The header has a flex display with a logo and search bar. The logo is styled with a font size of 2rem, a bold font weight, and a custom color that changes on hover. The search bar has padding, a border, a border radius, and a custom background and text color. The main content is displayed in a grid layout with auto-fit columns, and each movie card has a white background color and rounded corners. The movie poster and information are displayed inside a container, and the rating color changes based on the rating value. The movie overview has a padding and a font size of 1rem. Lastly, there is a custom error handling section with a background color of the error color and a centered text with a custom font size and color.
 
 Overall, my goal with this Movie Catalogue Static Webpage is to provide a simple and enjoyable way to browse and learn about movies. So, feel free to check it out and explore the many great films available. Thank you for watching, and this was cs50!
