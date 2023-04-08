@@ -1,118 +1,127 @@
+/* Global variables */
 :root {
-    --primary-color: #17252A;
-    --secondary-color: #E0FBFC;
-  }
+  --primary-color: #17252A; /* Primary color for background */
+  --secondary-color: #E0FBFC; /* Secondary color for text and accents */
+}
 
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: var(--primary-color);
-    color: #337577;
-  }
-  
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-  
-  .logo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--secondary-color);
-    text-decoration: none;
-  }
-  
-  .logo:hover {
-    color: #fff;
-  }
-  
-  .search {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.25rem;
-    background-color: #fff;
-    color: var(--primary-color);
-    font-size: 1rem;
-    margin-right: 1rem;
-  }
-  
-  .search::placeholder {
-    color: var(--primary-color);
-    opacity: 0.5;
-  }
-  
-  .search:focus {
-    outline: none;
-  }
-  
-  #main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1rem;
-    padding: 1rem;
-  }
-  
-  .movie {
-    background-color: #fff;
-    border-radius: 0.25rem;
-    overflow: hidden;
-  }
-  
-  .movie-img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .movie-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-  }
-  
-  .movie-info h3 {
-    margin: 0;
-    font-size: 1.5rem;
-  }
-  
-  .movie-info span.green {
-    color: lightgreen;
-  }
-  
-  .movie-info span.red {
-    color: crimson;
-  }
-  
-  .movie-info span.orange {
-    color: orange;
-  }
-  
-  .overview {
-    padding: 0.5rem 1rem;
-  }
-  
-  .overview h3 {
-    margin: 0;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
-  .errorHandle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 80px);
-  }
-  
-  .errorHandle h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    color: var(--primary-color);
-  }
-  
+/* Body styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--primary-color); /* Use primary color as the background */
+  color: #337577; /* Set text color */
+}
+
+/* Header styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* Logo styles */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--secondary-color); /* Use secondary color for the logo */
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #fff; /* Change logo color on hover */
+}
+
+/* Search bar styles */
+.search {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #fff; /* White background for search bar */
+  color: var(--primary-color); /* Use primary color for text */
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.search::placeholder {
+  color: var(--primary-color); /* Placeholder text color */
+  opacity: 0.5;
+}
+
+.search:focus {
+  outline: none; /* Remove focus outline */
+}
+
+/* Main content styles */
+#main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+/* Movie card styles */
+.movie {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.movie-img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color); /* Use primary color for background */
+  color: var(--secondary-color); /* Use secondary color for text */
+}
+
+.movie-info h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Movie rating styles */
+.movie-info span.green {
+  color: lightgreen;
+}
+
+.movie-info span.red {
+  color: crimson;
+}
+
+.movie-info span.orange {
+  color: orange;
+}
+
+/* Movie overview styles */
+.overview {
+  padding: 0.5rem 1rem;
+}
+
+.overview h3 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Error handling styles */
+.errorHandle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px); /* Center error message vertically */
+}
+
+.errorHandle h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--primary-color); /* Use primary color for error message */
+}
